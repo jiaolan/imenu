@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+  <display-name></display-name>
+   <servlet>
+    <description>公共的上传</description>
+    <display-name>公共的上传</display-name>
+    <servlet-name>UploadServlet</servlet-name>
+    <servlet-class>com.menu.servlet.UploadServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <description>员工端登录servlet</description>
+    <display-name>员工端登录servlet</display-name>
+    <servlet-name>EmployeeLoginServlet</servlet-name>
+    <servlet-class>com.menu.servlet.emp.EmployeeLoginServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>员工端页面</description>
+    <display-name>员工端页面</display-name>
+    <servlet-name>EmpMainServlet</servlet-name>
+    <servlet-class>com.menu.servlet.EmpMainServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>员工端员工servlet</description>
+    <display-name>员工端员工servlet</display-name>
+    <servlet-name>EmployeeServlet</servlet-name>
+    <servlet-class>com.menu.servlet.emp.EmployeeServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>菜谱分类servlet</description>
+    <display-name>菜谱分类servlet</display-name>
+    <servlet-name>MenuTypeServlet</servlet-name>
+    <servlet-class>com.menu.servlet.emp.MenuTypeServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>员工端菜谱编辑servlet</description>
+    <display-name>员工端菜谱编辑servlet</display-name>
+    <servlet-name>MenuServlet</servlet-name>
+    <servlet-class>com.menu.servlet.emp.MenuServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>用户端菜谱servlet</description>
+    <display-name>用户端菜谱servlet</display-name>
+    <servlet-name>UserMenuServlet</servlet-name>
+    <servlet-class>com.menu.servlet.user.UserMenuServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>用户端用户管理servlet</description>
+    <display-name>用户端用户管理servlet</display-name>
+    <servlet-name>UserControlServlet</servlet-name>
+    <servlet-class>com.menu.servlet.user.UserControlServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>用户端首页servlet</description>
+    <display-name>用户端首页servlet</display-name>
+    <servlet-name>IndexServlet</servlet-name>
+    <servlet-class>com.menu.servlet.user.IndexServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>菜谱详情页servlet</description>
+    <display-name>菜谱详情页servlet</display-name>
+    <servlet-name>MenuDetailservlet</servlet-name>
+    <servlet-class>com.menu.servlet.user.MenuDetailservlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>评论servlet</description>
+    <display-name>评论servlet</display-name>
+    <servlet-name>CommentServlet</servlet-name>
+    <servlet-class>com.menu.servlet.user.CommentServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>用户空间servlet</description>
+    <display-name>用户空间servlet</display-name>
+    <servlet-name>UserHomeServlet</servlet-name>
+    <servlet-class>com.menu.servlet.user.UserHomeServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>员工端用户servlet</description>
+    <display-name>员工端用户servlet</display-name>
+    <servlet-name>EmpUserServlet</servlet-name>
+    <servlet-class>com.menu.servlet.emp.EmpUserServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>用户端菜谱分类显示servlet</description>
+    <display-name>用户端菜谱分类显示servlet</display-name>
+    <servlet-name>MenuTypeListServlet</servlet-name>
+    <servlet-class>com.menu.servlet.user.MenuTypeListServlet</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>UploadServlet</servlet-name>
+    <url-pattern>/servlet/UploadServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>EmployeeLoginServlet</servlet-name>
+    <url-pattern>/servlet/EmployeeLoginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>EmpMainServlet</servlet-name>
+    <url-pattern>/servlet/EmpMainServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>EmployeeServlet</servlet-name>
+    <url-pattern>/servlet/EmployeeServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>MenuTypeServlet</servlet-name>
+    <url-pattern>/servlet/MenuTypeServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>MenuServlet</servlet-name>
+    <url-pattern>/servlet/MenuServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UserMenuServlet</servlet-name>
+    <url-pattern>/servlet/UserMenuServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UserControlServlet</servlet-name>
+    <url-pattern>/servlet/UserControlServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>IndexServlet</servlet-name>
+    <url-pattern>/index</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>MenuDetailservlet</servlet-name>
+    <url-pattern>/servlet/MenuDetailservlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CommentServlet</servlet-name>
+    <url-pattern>/servlet/CommentServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UserHomeServlet</servlet-name>
+    <url-pattern>/servlet/UserHomeServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>EmpUserServlet</servlet-name>
+    <url-pattern>/servlet/EmpUserServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>MenuTypeListServlet</servlet-name>
+    <url-pattern>/servlet/MenuTypeListServlet</url-pattern>
+  </servlet-mapping>
+
+  <filter>
+    <display-name>EmployeeLoginFilter</display-name>
+    <filter-name>EmployeeLoginFilter</filter-name>
+    <filter-class>com.menu.util.EmployeeLoginFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>EmployeeLoginFilter</filter-name>
+    <servlet-name>EmployeeServlet</servlet-name>
+    <servlet-name>EmpUserServlet</servlet-name>
+    <servlet-name>MenuServlet</servlet-name>
+    <servlet-name>MenuTypeServlet</servlet-name>
+    <servlet-name>EmpMainServlet</servlet-name>
+  </filter-mapping>
+
+
+  <filter>
+    <display-name>CharaterFilter</display-name>
+    <filter-name>CharaterFilter</filter-name>
+    <filter-class>com.menu.util.CharaterFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>CharaterFilter</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
+  
+  <filter>
+    <display-name>AutoLoginFilter</display-name>
+    <filter-name>AutoLoginFilter</filter-name>
+    <filter-class>com.menu.util.AutoLoginFilter</filter-class>
+  </filter>
+  
+  <filter-mapping>
+    <filter-name>AutoLoginFilter</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
+  
+  
+  <listener>
+    <description>application监听器</description>
+    <listener-class>com.menu.util.ApplicationListener</listener-class>
+  </listener>
+  
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
